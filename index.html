@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body onload="loadblogs()">
+
+    <header>
+        <ul>
+            <li><a href="#home">Ed</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#blog" class="nav-link active">Blog</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href=""><img src="images/facebook.svg" alt=""></a></li>
+            <li><a href="">
+                <img src="images/twitter.svg" alt="">
+            </a></li>
+            <li><a href="">
+                <img src="images/insta.svg" alt="">
+            </a></li>
+            <li><a href="">
+                <img src="images/linked-in.svg" alt="">
+            </a></li>
+            
+        </ul>
+    </header>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h1>
+                Blog
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
+            </p>
+
+        </div>
+        
+    </section>
+    <section class="main">
+        <section class="category-tabs">
+            <ul>
+                <li><a href="">
+                    Software
+                </a></li>
+
+                <li>
+                    <a href="">
+                    Science
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="blogs">
+
+        </section>
+    </section>
+    
+      
+</body>
+
+<script>
+    function loadblogs() {
+        
+        for(let i=0;i<7;i++){
+            var blogImage=document.createElement("img");
+            blogImage.className="cardImage";
+            var blogTitle=document.createElement("p");
+            blogTitle.className="cardTitle";
+            var blogText=document.createElement("p");
+            blogText.className="cardText";
+            var blogDate=document.createElement("p");
+            blogDate.className="cardDate";
+            var categoryName=document.createElement("p");
+            categoryName.className="cardCategory";
+
+            var card=document.createElement("div");
+            card.className="card";
+
+            blogImage.src="test-image.png";
+            
+            blogs.appendChild(card);
+            card.appendChild(blogImage);
+
+
+            
+            
+
+        }
+        
+    }
+</script>
+</html>
