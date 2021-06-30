@@ -8,7 +8,7 @@
 
 header{
     padding: 2rem;
-    background-color: #212121;
+    background-color: black;
 }
 ul{
     display: flex;
@@ -217,6 +217,7 @@ footer li{
     .social-link,.nav-link{
         display: none;
     }
+
 
     #blogs{
         
