@@ -10,17 +10,16 @@ header{
     padding: 2rem;
     background-color: #212121;
 }
-
-header ul{
+ul{
     display: flex;
 }
 
-header ul li{
+li{
     list-style-type: none;
 
 }
 
-header a{
+ a{
     text-decoration: none;
     color: white;
     
@@ -35,12 +34,20 @@ header ul li:first-child,li:nth-child(6){
     color:#97979c;
 }
 
+.nav{
+    display: flex;
+    
+}
 .active{
     color:white;
     border-bottom: 3px solid #34ffc8;
 }
 
+
+
 /* Intro*/
+
+
 
 .intro{
     min-height: 420px;
@@ -62,6 +69,12 @@ header ul li:first-child,li:nth-child(6){
 .intro-content h1{
     font-size: 2rem;
     padding-bottom: 5rem;
+}
+
+#avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 /*Main*/
@@ -201,7 +214,7 @@ footer li{
 /*For mobile devices */
 @media only screen and (max-width: 600px) {
 
-    .nav-link,.social-link{
+    .social-link,.nav-link{
         display: none;
     }
 
@@ -226,6 +239,35 @@ footer li{
 .category-tabs,#blogs{
     margin:0 1rem;
 }
+
+nav{
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    background-color: #212121;
+    top:0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6rem;
+}
+
+nav ul{
+    flex-direction: column;
+}
+ 
+nav li{
+    margin: 0.5rem 0;
+}
+
+
+.intro-content{
+    width: 90%;
+}
+
+
    
     
 
@@ -233,6 +275,10 @@ footer li{
 
  /* For tablets */
  @media only screen and (min-width: 600px) {
+     
+header ul li:nth-child(2),nav{
+    display: none;
+}
    
  }
  /* For laptops */
