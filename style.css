@@ -63,6 +63,9 @@ header ul li:first-child,li:nth-child(7){
 .intro-content {
     width: 60%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
 }
@@ -72,6 +75,15 @@ header ul li:first-child,li:nth-child(7){
     padding-bottom: 5rem;
 }
 
+.hire-me-button{
+    background-color: #34ffc8;
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    margin-top: 1rem;
+}
 
 /*Main*/
 .main{
@@ -164,6 +176,101 @@ header ul li:first-child,li:nth-child(7){
     width:100%;
 }
 
+.projectCard{
+    
+    margin: 1rem 4rem;
+    background-color: #212121;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projectLink{
+    width: 2rem;
+}
+
+.projectCategories,.projectLink{
+    align-self: flex-end;
+}
+
+.projectVideo{
+    width:100%;
+    height: 400px;
+}
+
+.projectTitle,.projectDescription,.projectCategories,.projectContent,.projectLink{
+    color:white;
+    margin: 1rem 0.5rem 0.2rem 0.5rem;
+}
+
+.projectTitle,.projectDescription{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.projectCategories{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.submit-button{
+    width: 100px;
+    align-self: flex-end;
+    background-color: #34ffc8;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 700;
+
+}
+
+.comment-edittext{
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    background-color: #2f2f2f;
+    border-color: #212121;
+}
+
+#blogDetail input::placeholder{
+    color: white;
+    font-weight: 700;
+    margin: 0;
+
+
+
+}
+
+#blogDetail h1{
+
+    font-size: 2rem;
+    padding: 0 0 3rem 0;
+}
+
+#blogDetail{
+    margin: 1rem 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#blogDetail p{
+    padding: 1rem;
+    margin-left: 4rem;
+    color:#a7a7ad;
+    
+}
+
+#blogDetail h4{
+    margin-left: 6rem;
+}
+#blogDetail h1,h4,p{
+    color:white;
+}
+
+
+
 .more-button{
     background-color: #34ffc8;
     width: 150px;
@@ -241,6 +348,14 @@ footer li{
     grid-row-gap:0.5rem;
 
     }
+    #blogDetail p{
+        margin-left: 1rem;
+        
+    }
+    
+    #blogDetail h4{
+        margin-left: 3rem;
+    }
 
     .subscribe{
         flex-direction: column;
@@ -281,6 +396,19 @@ nav li{
 .intro-content{
     width: 90%;
 }
+
+.projectCard{
+    margin: 1rem 0.5rem;
+}
+
+.projectVideo{
+    height: 240px;
+}
+
+.projectCategories{
+    font-size: 1.2rem;
+}
+
 
 
    

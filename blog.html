@@ -47,7 +47,7 @@
         <section class="intro">
             <div class="intro-content">
                 <h1>
-                    Blog
+                    Test Blogs
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
@@ -137,6 +137,12 @@
             categoryName.className="cardCategory";
 
             var card=document.createElement("div");
+            
+            card.onclick=function show(){
+     
+     window.location.href="blog-detail.html";
+     console.log("showing");
+}
             card.className="card";
 
             blogImage.src="test-image.png";
@@ -172,5 +178,7 @@ if(window.innerWidth<=600){
 document.getElementById('nav').style.width="0px";
 }
 }
+
+
 </script>
 </html>

@@ -56,6 +56,10 @@
                 <p>
                     I am a software developer with robust problem-solving skills and proven experience in creating and designing software in a test-driven environment.
                 </p>
+
+                <div class="hire-me-button">
+                    Hire me
+                </div>
     
             </div>
             
@@ -120,7 +124,7 @@
 </body>
 
 <script>
-    function projects() {
+    function loadprojects() {
         
         for(let i=0;i<2;i++){
             var projectVideo=document.createElement("img");
@@ -133,20 +137,25 @@
             projectCategories.className="projectCategories";
             var projectContent=document.createElement("p");
             projectContent.className="projectContent";
+            var projectCard=document.createElement("div");
+            projectCard.className="projectCard";
+            var projectLink=document.createElement("img");
+            projectLink.className="projectLink";
 
-            var card=document.createElement("div");
-            card.className="card";
-
-            blogImage.src="test-image.png";
-            categoryName.innerHTML="Category Name  |  Date"
-            blogTitle.innerHTML="Lorem ipsum dolor sit amet, consectetur."
-            blogText.innerHTML="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia in deserunt mollit anim id est sint laborum.";
+            projectTitle.innerHTML="Project name";
+            projectVideo.src="images/video-demo.png";
+            projectDescription.innerHTML="Project Description"
+            projectContent.innerHTML="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor"
+            projectCategories.innerHTML=" Category 1 | Category 2 | Category 3";
+            projectLink.src="images/github.svg";
             
-            blogs.appendChild(card);
-            card.appendChild(blogImage);
-            card.appendChild(categoryName);
-            card.appendChild(blogTitle);
-            card.appendChild(blogText);
+            projects.appendChild(projectCard);
+            projectCard.appendChild(projectTitle);
+            projectCard.appendChild(projectVideo);
+            projectCard.appendChild(projectDescription);
+            projectCard.appendChild(projectContent);
+            projectCard.appendChild(projectCategories);
+            projectCard.appendChild(projectLink);
 
 
             
