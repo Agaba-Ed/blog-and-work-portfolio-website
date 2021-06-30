@@ -26,7 +26,7 @@ li{
     padding:0 0.3rem;
 }
 
-header ul li:first-child,li:nth-child(6){
+header ul li:first-child,li:nth-child(7){
     flex-grow: 2;
 }
 
