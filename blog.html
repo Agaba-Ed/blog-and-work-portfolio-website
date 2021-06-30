@@ -9,52 +9,57 @@
 </head>
 <body onload="loadblogs()">
 
-    <header>
-        <ul>
-            <li><a href="#home">Ed</a></li>
-            <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
-            <li class="nav-link"><a href="#about" >About</a></li>
-            <li class="nav-link"><a href="#projects" >Projects</a></li>
-            <li class="nav-link active"><a href="#blog" >Blog</a></li>
-            <li class="nav-link"><a href="#resume" >Resume</a></li>
-            <li  class="nav-link"><a href="#contact">Contact</a></li>
-            <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
-            <li><a href="" class="social-link">
-                <img src="images/twitter.svg" alt="">
-            </a></li>
-            <li><a href="" class="social-link">
-                <img src="images/insta.svg" alt="">
-            </a></li>
-            <li><a href="" class="social-link">
-                <img src="images/linked-in.svg" alt="">
-            </a></li>
+    <div class="top">
+        <header>
+            <ul>
+                <li><a href="#home">Ed</a></li>
+                <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
+                <li class="nav-link"><a href="index.html" >About</a></li>
+                <li class="nav-link"><a href="#projects" >Projects</a></li>
+                <li class="nav-link active"><a href="blog.html" >Blog</a></li>
+                <li class="nav-link"><a href="#resume" >Resume</a></li>
+                <li  class="nav-link"><a href="#contact">Contact</a></li>
+                <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
+                <li><a href="" class="social-link">
+                    <img src="images/twitter.svg" alt="">
+                </a></li>
+                <li><a href="" class="social-link">
+                    <img src="images/insta.svg" alt="">
+                </a></li>
+                <li><a href="" class="social-link">
+                    <img src="images/linked-in.svg" alt="">
+                </a></li>
+                
+            </ul>
+        </header>
+        <nav id="nav"
+        onclick="toggleClose()">
+            <ul>
+                
+            <li ><a href="index.html" >About</a></li>
+            <li><a href="#projects" >Projects</a></li>
+            <li ><a href="blog.html" >Blog</a></li>
+            <li><a href="#resume" >Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <section class="intro">
+            <div class="intro-content">
+                <h1>
+                    Blog
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
+                </p>
+    
+            </div>
             
-        </ul>
-    </header>
-    <nav id="nav"
-    onclick="toggleClose()">
-        <ul>
-            
-        <li ><a href="#about" >About</a></li>
-        <li><a href="#projects" >Projects</a></li>
-        <li ><a href="#blog" >Blog</a></li>
-        <li><a href="#resume" >Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        </section>
 
-    <section class="intro">
-        <div class="intro-content">
-            <h1>
-                Blog
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
-            </p>
+    </div>
 
-        </div>
-        
-    </section>
+    
     <section class="main">
         <section class="category-tabs">
             <ul>

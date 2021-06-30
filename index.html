@@ -7,73 +7,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Ed</title>
 </head>
-<body onload="loadblogs()">
+<body onload="loadprojects()">
 
-    <header>
-        <ul>
-            <li><a href="#home">Ed</a></li>
-            <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
-            <li class="nav-link active"><a href="index.html" >About</a></li>
-            <li class="nav-link"><a href="#projects" >Projects</a></li>
-            <li class="nav-link"><a href="blog.html" >Blog</a></li>
-            <li class="nav-link"><a href="#resume" >Resume</a></li>
-            <li  class="nav-link"><a href="#contact">Contact</a></li>
-            <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
-            <li><a href="" class="social-link">
-                <img src="images/twitter.svg" alt="">
-            </a></li>
-            <li><a href="" class="social-link">
-                <img src="images/insta.svg" alt="">
-            </a></li>
-            <li><a href="" class="social-link">
-                <img src="images/linked-in.svg" alt="">
-            </a></li>
-            
-        </ul>
-    </header>
-    <nav id="nav"
-    onclick="toggleClose()">
-        <ul>
-            
-        <li ><a href="index.html" >About</a></li>
-        <li><a href="#projects" >Projects</a></li>
-        <li ><a href="blog.html" >Blog</a></li>
-        <li><a href="#resume" >Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="intro">
-        <div class="intro-content">
-
-                <img src="images/ed.jpg" alt="" style="width: 240px; height: 240px; border-radius: 50%;">
-                <h2>
-            
-           
-                Hi, I'm Edwin Agaba
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
-            </p>
-
-        </div>
-        
-    </section>
-    <section class="main">
-        <section class="category-tabs">
+    <div class="top">
+        <header>
             <ul>
-                <li><a href="">
-                    Software
+                <li><a href="#home">Ed</a></li>
+                <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
+                <li class="nav-link active"><a href="index.html" >About</a></li>
+                <li class="nav-link"><a href="#projects" >Projects</a></li>
+                <li class="nav-link"><a href="blog.html" >Blog</a></li>
+                <li class="nav-link"><a href="#resume" >Resume</a></li>
+                <li  class="nav-link"><a href="#contact">Contact</a></li>
+                <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
+                <li><a href="" class="social-link">
+                    <img src="images/twitter.svg" alt="">
                 </a></li>
-
-                <li>
-                    <a href="">
-                    Science
-                    </a>
-                </li>
+                <li><a href="" class="social-link">
+                    <img src="images/insta.svg" alt="">
+                </a></li>
+                <li><a href="" class="social-link">
+                    <img src="images/linked-in.svg" alt="">
+                </a></li>
+                
             </ul>
+        </header>
+        <nav id="nav"
+        onclick="toggleClose()">
+            <ul>
+                
+            <li ><a href="index.html" >About</a></li>
+            <li><a href="#projects" >Projects</a></li>
+            <li ><a href="blog.html" >Blog</a></li>
+            <li><a href="#resume" >Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <section class="intro">
+            <div class="intro-content">
+    
+                    <img src="images/ed.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
+                    <h2>
+                
+               
+                    Hi, I'm Edwin Agaba
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae velit molestias, consectetur voluptates et vitae labore ut ipsam iusto odit, voluptate, dolorum ducimus libero tenetur repellendus deleniti rerum earum maiores!
+                </p>
+    
+            </div>
+            
         </section>
-        <section id="blogs">
+    </div>
+    
+    <section class="main">
+       
+        <section id="projects">
+
+            <h2>
+                Featured Projects
+            </h2>
+
+            <hr>
 
         </section>
         <div class="more-button" onclick="loadmore()">
@@ -123,17 +120,19 @@
 </body>
 
 <script>
-    function loadblogs() {
+    function projects() {
         
-        for(let i=0;i<7;i++){
-            var blogImage=document.createElement("img");
-            blogImage.className="cardImage";
-            var blogTitle=document.createElement("p");
-            blogTitle.className="cardTitle";
-            var blogText=document.createElement("p");
-            blogText.className="cardText";
-            var categoryName=document.createElement("p");
-            categoryName.className="cardCategory";
+        for(let i=0;i<2;i++){
+            var projectVideo=document.createElement("img");
+            projectVideo.className="projectVideo";
+            var projectTitle=document.createElement("p");
+            projectTitle.className="projectTitle";
+            var projectDescription=document.createElement("p");
+            projectDescription.className="projectDescription";
+            var projectCategories=document.createElement("p");
+            projectCategories.className="projectCategories";
+            var projectContent=document.createElement("p");
+            projectContent.className="projectContent";
 
             var card=document.createElement("div");
             card.className="card";

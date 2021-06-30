@@ -6,9 +6,12 @@
 
 /*header*/
 
+.top{
+    background-image: url(images/background.png);
+}
+
 header{
     padding: 2rem;
-    background-color: black;
 }
 ul{
     display: flex;
@@ -50,8 +53,6 @@ header ul li:first-child,li:nth-child(7){
 
 
 .intro{
-    min-height: 420px;
-    background-color: black;
     color:white;
     display: flex;
     justify-content: center;
@@ -71,11 +72,6 @@ header ul li:first-child,li:nth-child(7){
     padding-bottom: 5rem;
 }
 
-#avatar{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
 
 /*Main*/
 .main{
@@ -112,6 +108,24 @@ header ul li:first-child,li:nth-child(7){
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 0.5rem;
     grid-row-gap:0.5rem;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h2{
+    align-self: center;
+    color: white;
+    margin: 2rem 0 0.5rem 0;
+}
+
+#projects hr{
+    background-color: #212121;
+    width: 60px;
+    height: 4px;
+    align-self: center;
 }
 
 .card {
