@@ -12,12 +12,12 @@
     <div class="top">
         <header>
             <ul>
-                <li><a href="#home">Ed</a></li>
+                <li><a href="index.html">Ed</a></li>
                 <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
                 <li class="nav-link active"><a href="index.html" >About</a></li>
                 <li class="nav-link"><a href="#projects" >Projects</a></li>
                 <li class="nav-link"><a href="blog.html" >Blog</a></li>
-                <li class="nav-link"><a href="#resume" >Resume</a></li>
+                <li class="nav-link"><a href="Ed Resume.pdf" >Resume</a></li>
                 <li  class="nav-link"><a href="#contact">Contact</a></li>
                 <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
                 <li><a href="" class="social-link">
@@ -39,7 +39,7 @@
             <li ><a href="index.html" >About</a></li>
             <li><a href="#projects" >Projects</a></li>
             <li ><a href="blog.html" >Blog</a></li>
-            <li><a href="#resume" >Resume</a></li>
+            <li><a href="Ed Resume.pdf" >Resume</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -123,61 +123,7 @@
       
 </body>
 
-<script>
-    function loadprojects() {
-        
-        for(let i=0;i<2;i++){
-            var projectVideo=document.createElement("img");
-            projectVideo.className="projectVideo";
-            var projectTitle=document.createElement("p");
-            projectTitle.className="projectTitle";
-            var projectDescription=document.createElement("p");
-            projectDescription.className="projectDescription";
-            var projectCategories=document.createElement("p");
-            projectCategories.className="projectCategories";
-            var projectContent=document.createElement("p");
-            projectContent.className="projectContent";
-            var projectCard=document.createElement("div");
-            projectCard.className="projectCard";
-            var projectLink=document.createElement("img");
-            projectLink.className="projectLink";
+<script src="index.js">
 
-            projectTitle.innerHTML="Project name";
-            projectVideo.src="images/video-demo.png";
-            projectDescription.innerHTML="Project Description"
-            projectContent.innerHTML="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor"
-            projectCategories.innerHTML=" Category 1 | Category 2 | Category 3";
-            projectLink.src="images/github.svg";
-            
-            projects.appendChild(projectCard);
-            projectCard.appendChild(projectTitle);
-            projectCard.appendChild(projectVideo);
-            projectCard.appendChild(projectDescription);
-            projectCard.appendChild(projectContent);
-            projectCard.appendChild(projectCategories);
-            projectCard.appendChild(projectLink);
-
-
-            
-            
-
-        }
-        
-    }
-    function toggleOpen() {
-    
-
-document.getElementById('nav').style.width="40%";
-
-
-}
-
-function toggleClose() {
-
-if(window.innerWidth<=600){
-
-document.getElementById('nav').style.width="0px";
-}
-}
 </script>
 </html>

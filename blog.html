@@ -15,9 +15,9 @@
                 <li><a href="#home">Ed</a></li>
                 <li><img onclick="toggleOpen()" src="images/Icon.svg" alt=""></li>
                 <li class="nav-link"><a href="index.html" >About</a></li>
-                <li class="nav-link"><a href="#projects" >Projects</a></li>
+                <li class="nav-link"><a href="index.html#projects" >Projects</a></li>
                 <li class="nav-link active"><a href="blog.html" >Blog</a></li>
-                <li class="nav-link"><a href="#resume" >Resume</a></li>
+                <li class="nav-link"><a href="Ed Resume.pdf" >Resume</a></li>
                 <li  class="nav-link"><a href="#contact">Contact</a></li>
                 <li class="social-link"><a href="" ><img src="images/facebook.svg" alt=""></a></li>
                 <li><a href="" class="social-link">
@@ -37,9 +37,9 @@
             <ul>
                 
             <li ><a href="index.html" >About</a></li>
-            <li><a href="#projects" >Projects</a></li>
+            <li><a href="index.html#projects" >Projects</a></li>
             <li ><a href="blog.html" >Blog</a></li>
-            <li><a href="#resume" >Resume</a></li>
+            <li><a href="Ed Resume.pdf" >Resume</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -123,62 +123,7 @@
       
 </body>
 
-<script>
-    function loadblogs() {
-        
-        for(let i=0;i<7;i++){
-            var blogImage=document.createElement("img");
-            blogImage.className="cardImage";
-            var blogTitle=document.createElement("p");
-            blogTitle.className="cardTitle";
-            var blogText=document.createElement("p");
-            blogText.className="cardText";
-            var categoryName=document.createElement("p");
-            categoryName.className="cardCategory";
-
-            var card=document.createElement("div");
-            
-            card.onclick=function show(){
-     
-     window.location.href="blog-detail.html";
-     console.log("showing");
-}
-            card.className="card";
-
-            blogImage.src="test-image.png";
-            categoryName.innerHTML="Category Name  |  Date"
-            blogTitle.innerHTML="Lorem ipsum dolor sit amet, consectetur."
-            blogText.innerHTML="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia in deserunt mollit anim id est sint laborum.";
-            
-            blogs.appendChild(card);
-            card.appendChild(blogImage);
-            card.appendChild(categoryName);
-            card.appendChild(blogTitle);
-            card.appendChild(blogText);
-
-
-            
-            
-
-        }
-        
-    }
-    function toggleOpen() {
-    
-
-document.getElementById('nav').style.width="40%";
-
-
-}
-
-function toggleClose() {
-
-if(window.innerWidth<=600){
-
-document.getElementById('nav').style.width="0px";
-}
-}
-
+<script src="index.js">
 
 </script>
 </html>
