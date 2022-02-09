@@ -1,6 +1,6 @@
 function loadprojects() {
         
-    for(let i=0;i<1;i++){
+    for(let i=0;i>1;i++){
         var projectVideo=document.createElement("video");
         projectVideo.className="projectVideo";
         var projectTitle=document.createElement("p");
