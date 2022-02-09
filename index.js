@@ -1,7 +1,7 @@
 function loadprojects() {
         
-    for(let i=0;i<2;i++){
-        var projectVideo=document.createElement("img");
+    for(let i=0;i<1;i++){
+        var projectVideo=document.createElement("video");
         projectVideo.className="projectVideo";
         var projectTitle=document.createElement("p");
         projectTitle.className="projectTitle";
@@ -16,11 +16,11 @@ function loadprojects() {
         var projectLink=document.createElement("img");
         projectLink.className="projectLink";
 
-        projectTitle.innerHTML="Project name";
-        projectVideo.src="images/video-demo.png";
+        projectTitle.innerHTML="Online Shopping Store for building materials";
+        projectVideo.src="builda.mp4";
         projectDescription.innerHTML="Project Description"
         projectContent.innerHTML="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor"
-        projectCategories.innerHTML=" Category 1 | Category 2 | Category 3";
+        projectCategories.innerHTML=" Android| Java";
         projectLink.src="images/github.svg";
         
         projects.appendChild(projectCard);
